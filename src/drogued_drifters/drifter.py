@@ -5,8 +5,7 @@ class DroguedDrifter:
         self.k_b = k_b
         self.k_d = k_d
 
-        self.M_lbd = M_lbd
-        self.F_lbd = F_lbd
+        self.M_lbd, self.F_lbd = self.solve_sp_MF()
 
     def solve_sp_MF(self):
         raise NotImplementedError
